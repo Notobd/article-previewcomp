@@ -42,7 +42,8 @@ h1 + P {
 .hero-img,
 .profilepic,
 .sharer,
-.icons img {
+.icons img,
+.js-divv .sharerr {
   display: block;
   height: auto;
   width: 100%;
@@ -110,6 +111,7 @@ h1 + P {
 .hidden {
   display: none;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -124,7 +126,7 @@ h1 + P {
   .profilepic,
   /* .sharer, */
   .icons {
-    width: 20%;
+    width: 15%;
   }
   .sharer {
     width: 100%;
@@ -182,27 +184,34 @@ h1 + P {
 @media (max-width: 767px) {
   main {
     flex-direction: column;
-  }
-  .container {
-    width: 100%;
-    padding: 1rem;
-    align-items: center;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 1px solid black;
+  }
+  .container {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0rem;
+    align-items: center;
+    justify-content: center;
   }
   .hero-img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 20px;
   }
+  .profile {
+    padding: 1rem;
+    width: 100%;
+    /* background-color: hsl(212, 23%, 39%); */
+  }
   .profilepic {
     width: 15%;
   }
-  .sharer {
+  /* .sharer {
     width: 100%;
     height: 100%;
-  }
+  } */
   h1 {
     font-size: 1.8rem;
     width: 24ch;
@@ -213,10 +222,10 @@ h1 + P {
     width: 31.7ch;
   }
   .username {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .day {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .share-button {
     padding: 1rem;
@@ -224,8 +233,47 @@ h1 + P {
   .attribution {
     margin-top: 10px;
   }
-  .profile {
-    /* width: 100%; */
-    background-color: hsl(212, 23%, 69%);
+  .js-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 50px;
+    background-color: hsl(212, 23%, 39%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .js-div p {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: hsl(214, 17%, 71%);
+    font-weight: 600;
+  }
+  .nest-div {
+    padding: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 1rem;
+  }
+  .button {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: hsl(214, 17%, 21%);
+    border: none;
+  }
+  .js-divv .sharerr {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .mobsoc {
+    width: 100%;
   }
 }
