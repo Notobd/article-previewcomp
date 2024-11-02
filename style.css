@@ -26,6 +26,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 30px;
   padding: 2rem;
 }
@@ -183,6 +184,7 @@ h1 + P {
     flex-direction: column;
   }
   .container {
+    width: 100%;
     padding: 1rem;
     align-items: center;
     border-bottom-left-radius: 15px;
@@ -193,10 +195,8 @@ h1 + P {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 20px;
-    margin-top: 5px;
   }
-  .profilepic,
-  .icons {
+  .profilepic {
     width: 15%;
   }
   .sharer {
@@ -212,7 +212,6 @@ h1 + P {
     font-weight: 400;
     width: 31.7ch;
   }
-
   .username {
     font-size: 1rem;
   }
@@ -221,5 +220,12 @@ h1 + P {
   }
   .share-button {
     padding: 1rem;
+  }
+  .attribution {
+    margin-top: 10px;
+  }
+  .profile {
+    /* width: 100%; */
+    background-color: hsl(212, 23%, 69%);
   }
 }
